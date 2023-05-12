@@ -1,0 +1,6 @@
+project: polyanya
+target: vertex
+duration: 300
+
+cmds:
+  - cmd: /vertex
