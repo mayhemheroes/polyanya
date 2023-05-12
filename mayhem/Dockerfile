@@ -22,4 +22,4 @@ COPY --from=builder /polyanya/fuzz/target/x86_64-unknown-linux-gnu/release/verte
 
 COPY --from=builder /polyanya/fuzz/target/x86_64-unknown-linux-gnu/release/polygon /
 
-COPY --from=builder /polyanya/fuzz/target/x86_64-unknown-linux-gnu/release/aurora /
+COPY --from=builder /polyanya/fuzz/target/x86_64-unknown-linux-gnu/release/path /
