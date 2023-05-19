@@ -1,0 +1,38 @@
+[package]
+name = "polyanya-fuzz"
+version = "0.1.0"
+authors = ["Automatically generated"]
+publish = false
+edition = "2018"
+
+[package.metadata]
+cargo-fuzz = true
+
+[dependencies]
+libfuzzer-sys = "0.4"
+glam = { version = "0.23", features = ["approx"] }
+
+[dependencies.polyanya]
+path = ".."
+
+# Prevent this from interfering with workspaces
+[workspace]
+members = ["."]
+
+[[bin]]
+name = "vertex"
+path = "fuzz_targets/vertex.rs"
+test = false
+doc = false
+
+[[bin]]
+name = "polygon"
+path = "fuzz_targets/polygon.rs"
+test = false
+doc = false
+
+[[bin]]
+name = "path"
+path = "fuzz_targets/path.rs"
+test = false
+doc = false

@@ -1,0 +1,6 @@
+project: polyanya
+target: path
+duration: 300
+
+cmds:
+  - cmd: /path

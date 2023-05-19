@@ -1,0 +1,6 @@
+project: polyanya
+target: polygon
+duration: 300
+
+cmds:
+  - cmd: /polygon
